@@ -1,5 +1,5 @@
 FROM node:latest
-WORKDIR /app
+WORKDIR .
 COPY . .
 RUN yarn install --production
 CMD ["node", "/app/src/index.js"]

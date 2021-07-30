@@ -8,8 +8,8 @@ const ITEM = {
 };
 
 beforeEach(() => {
-    if (fs.existsSync('./todo.db')) {
-        fs.unlinkSync('./todo.db');
+    if (fs.existsSync('/tmp/todo.db')) {
+        fs.unlinkSync('/tmp/todo.db');
     }
 });
 
