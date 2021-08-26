@@ -1,0 +1,6 @@
+FROM registry.redhat.io/ubi8/nodejs-14:latest
+WORKDIR .
+COPY . .
+RUN npm install -g yarn -s &>/dev/null
+RUN yarn install --production
+CMD ["node", "src/index.js"]
